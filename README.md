@@ -16,8 +16,10 @@ A ComfyUI custom node package for **Qwen3-TTS**, providing high-quality Text-to-
 Ensure you have the required Python packages installed in your ComfyUI environment:
 
 ```bash
-pip install qwen-tts torch soundfile transformers accelerate
+pip install qwen-tts torch soundfile accelerate transformers==4.57.3
 ```
+
+> ⚠️ Dependency Note: The upstream qwen-tts package requires transformers==4.57.3. This may downgrade your existing transformers version. If other custom nodes require a newer version, consider using a separate Python environment.
 
 ### 2. Install Custom Node
 
